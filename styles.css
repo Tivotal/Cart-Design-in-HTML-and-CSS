@@ -1,0 +1,169 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --color-primary: #2a2f43;
+  --color-secondary: #2a2f43ea;
+  --color-background: #f5f5f5;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+}
+
+.cart {
+  width: 400px;
+  height: min-content;
+  background: var(--color-background);
+  padding: 34px;
+  border-radius: 4px;
+}
+
+.cart .cart-header {
+  display: flex;
+  margin: 0 0 40px 0;
+}
+
+.cart .cart-header button {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: var(--color-primary);
+  background: #ddddde50;
+  border: 2px solid #ddddde;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.cart .cart-header button:hover {
+  color: #fff;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.cart .cart-header h3 {
+  font-size: 20px;
+  margin: auto;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.cart .cart-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px #2a2f430b;
+}
+
+.cart .cart-item .image {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cart .cart-item .image img {
+  width: 90%;
+}
+
+.cart .cart-item .info {
+  width: 70%;
+  padding: 14px;
+}
+
+.cart .cart-item .info h4 {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cart .cart-item .info .details {
+  display: flex;
+}
+
+.cart .cart-item .info .details i {
+  color: #2a2f43d2;
+  font-size: 17px;
+  transform: translateY(3px);
+}
+
+.cart .cart-item .info .details span {
+  color: #2a2f4399;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: -2px;
+}
+
+.cart .cart-item .info .details .status {
+  margin-left: 8px;
+}
+
+.cart .cart-item .info .price {
+  color: var(--color-secondary);
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.cart .cart-item .info .price .counter {
+  position: absolute;
+  bottom: 0;
+  right: 14px;
+}
+
+.cart .cart-item .info .price .counter i {
+  cursor: pointer;
+  width: 24px;
+  height: 38px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 8px 8px 0 0;
+}
+
+.cart .cart-item .info .price .counter span {
+  margin: 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.cart .btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 16px 0;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--color-primary);
+  transition: 0.3s;
+}
+
+.cart .btn:hover {
+  background: #2a2f43f1;
+}
